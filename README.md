@@ -42,13 +42,13 @@ You can create an initiative, register risks/dependencies, assign work, update m
 
 ## Local preview
 
-Serve the folder with any static web server. For example:
+Clone or download the repository, then serve the folder with any static web server. For example:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then open http://localhost:8000 . The app is static, with no build step or package installation required. Run pure business-rule checks with `npm test`. It is compatible with static web hosting such as GitHub Pages or Render static sites.
+Then open http://localhost:8000 . The published app is a self-contained `index.html`; there is no build step, package installation, or backend required. It is compatible with static hosting such as GitHub Pages or Render static sites.
 
 ## Demonstration boundaries
 
@@ -57,3 +57,6 @@ Then open http://localhost:8000 . The app is static, with no build step or packa
 - Project schedules are simplified demonstration plans, not production-grade scheduling or critical-path calculations.
 - The browser data store is not a multi-user database. There is no simultaneous collaboration or actual audit immutability.
 - This demo illustrates delivery-management concepts, not actual implementation of vendor compliance enforcement, production DevOps integrations or Microsoft Fabric governance APIs.
+## GitHub Pages
+
+For the live demo, open **Settings → Pages** in this GitHub repository, choose **Deploy from a branch**, select **main** and **/(root)**, and save. The site address will be `https://sachintechpro.github.io/technportfolio360/` after GitHub completes the deployment.
